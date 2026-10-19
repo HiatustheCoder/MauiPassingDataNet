@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiPassingDataNet.SecondPage"
+    Title="Result">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="25">
+
+            <Label
+                Text="Dalvin Wolff"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center" />
+
+            <Label
+                x:Name="NumbersLabel"
+                FontSize="24"
+                HorizontalTextAlignment="Center" />
+
+            <Label
+                x:Name="ResultLabel"
+                FontSize="24"
+                HorizontalTextAlignment="Center" />
+
+            <Button
+                Text="Go Back"
+                Clicked="OnGoBackClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

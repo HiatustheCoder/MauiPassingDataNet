@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiPassingDataNet.MainPage"
+    Title="Add and Subtract">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="20">
+
+            <Label
+                Text="Dalvin Wolff Add and Subtract"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center" />
+
+            <Label
+                Text="First Value"
+                FontSize="20" />
+
+            <Entry
+                x:Name="FirstValueEntry"
+                Placeholder="Enter the first number"
+                Keyboard="Numeric" />
+
+            <Label
+                Text="Second Value"
+                FontSize="20" />
+
+            <Entry
+                x:Name="SecondValueEntry"
+                Placeholder="Enter the second number"
+                Keyboard="Numeric" />
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="15">
+
+                <Button
+                    Grid.Column="0"
+                    Text="Addition"
+                    Clicked="OnAdditionClicked" />
+
+                <Button
+                    Grid.Column="1"
+                    Text="Subtraction"
+                    Clicked="OnSubtractionClicked" />
+
+            </Grid>
+
+            <Label
+                x:Name="MessageLabel"
+                Text=""
+                FontSize="24"
+                TextColor="Red"
+                HorizontalTextAlignment="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
